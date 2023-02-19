@@ -36,7 +36,7 @@ class _TabBarHeaderState extends State<TabBarHeader> {
           //TabElement(title: '_contact_me'),
         ],
       ),
-      leadingWidth: 200,
+      leadingWidth: 400,
       leading: Padding(
         padding: const EdgeInsets.all(8),
         child: Text(
@@ -48,7 +48,9 @@ class _TabBarHeaderState extends State<TabBarHeader> {
         Tooltip(
           message: 'Contact me',
           child: TextButton(
-            onPressed: () async {},
+            onPressed: () {
+              //DefaultTabController.of(context)!.animateTo(3);
+            },
             style: TextButton.styleFrom(
               foregroundColor: secondaryGreyColor,
             ),
@@ -67,7 +69,7 @@ class _TabBarHeaderState extends State<TabBarHeader> {
               ],
             ),
           ),
-        )
+        ),
       ],
       shape: Border.all(color: secondaryGreyColor),
     );
