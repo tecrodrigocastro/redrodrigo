@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:redrodrigo/pages/home_page/widgets/info_home.dart';
 import 'package:redrodrigo/pages/home_page/widgets/key_keyboard.dart';
+import 'package:redrodrigo/pages/home_page/widgets/snack_game/snack_game.dart';
 import 'package:redrodrigo/shared/constants/colors_schema.dart';
 
 class HomePage extends StatelessWidget {
@@ -49,6 +50,7 @@ class HomePage extends StatelessWidget {
                           height: 420,
                           width: 250,
                           color: primaryColor,
+                          child: SnackGame(),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(10),

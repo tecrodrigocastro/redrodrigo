@@ -83,6 +83,7 @@ class InfoHome extends StatelessWidget {
                 Text(
                   '"https://github.com/tecrodrigocastro"',
                   style: TextStyle(color: accentOrangeColor),
+                  overflow: TextOverflow.ellipsis,
                 ),
                 Text(
                   ';',
