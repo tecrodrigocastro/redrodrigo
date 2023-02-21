@@ -146,7 +146,7 @@ class _SnackGameState extends State<SnackGame> {
           children: [
             Expanded(
               child: GridView.builder(
-                itemCount: 300,
+                itemCount: 375,
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 15,
                   crossAxisSpacing: 2,
