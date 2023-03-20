@@ -1,16 +1,16 @@
 import '../../enums.dart';
 
-class Resource {
-  Resource({required this.type, required this.name, this.children});
+class Item {
+  Item({required this.type, required this.name, this.children});
 
-  final ResourceType type;
+  final ItemType type;
   final String name;
-  final List<Resource>? children;
+  final List<Item>? children;
 }
 
-class ResourceTree {
+class ItemTree {
   final String treeTitle;
-  final List<Resource>? treeStructure;
+  final List<Item>? treeStructure;
 
-  ResourceTree({required this.treeTitle, this.treeStructure});
+  ItemTree({required this.treeTitle, this.treeStructure});
 }

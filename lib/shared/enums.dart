@@ -1,1 +1,1 @@
-enum ResourceType { folder, file }
+enum ItemType { folder, file }

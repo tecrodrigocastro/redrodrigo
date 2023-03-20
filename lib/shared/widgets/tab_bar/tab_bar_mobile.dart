@@ -1,48 +1,27 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:redrodrigo/shared/constants/colors_schema.dart';
 import 'package:redrodrigo/shared/widgets/tab_bar/tab_element.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
-class TabBarHeader extends StatefulWidget with PreferredSizeWidget {
-  const TabBarHeader({super.key});
-
-  @override
-  State<TabBarHeader> createState() => _TabBarHeaderState();
+class TabBarMobile extends StatefulWidget with PreferredSizeWidget {
+  const TabBarMobile({super.key});
 
   @override
-  Size get preferredSize => const Size.fromHeight(42);
+  State<TabBarMobile> createState() => _TabBarMobileState();
+
+  @override
+  Size get preferredSize => const Size.fromHeight(41);
 }
 
-class _TabBarHeaderState extends State<TabBarHeader> {
+class _TabBarMobileState extends State<TabBarMobile> {
   @override
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: primaryColor,
       centerTitle: false,
-      title: const TabBar(
-        isScrollable: true,
-        indicatorColor: accentOrangeColor,
-        indicatorSize: TabBarIndicatorSize.tab,
-        indicatorWeight: 8,
-        labelPadding: EdgeInsets.zero,
-        labelColor: secondaryWhiteColor,
-        unselectedLabelColor: primaryColorLight,
-        tabs: [
-          TabElement(title: '_hello'),
-          TabElement(title: '_about_me'),
-          TabElement(title: '_projects'),
-          TabElement(title: '_contact_me'),
-          //TabElement(title: '_contact_me'),
-        ],
-      ),
-      leadingWidth: 400,
-      leading: Padding(
-        padding: const EdgeInsets.all(8),
-        child: Text(
-          'rodrigo-castro',
-          style: Theme.of(context).textTheme.bodyText1,
-        ),
+      title: Text(
+        'rodrigo-castro',
+        style: Theme.of(context).textTheme.bodyText1,
       ),
       actions: [
         Tooltip(

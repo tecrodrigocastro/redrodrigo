@@ -1,37 +1,37 @@
 import 'package:redrodrigo/shared/enums.dart';
 import 'package:redrodrigo/shared/widgets/layout/resource.dart';
 
-final ResourceTree aboutMeResourceStructure = ResourceTree(
+final ItemTree aboutMeItemStructure = ItemTree(
   treeTitle: "about_me",
   treeStructure: [
-    Resource(
-      type: ResourceType.folder,
+    Item(
+      type: ItemType.folder,
       name: "personal",
       children: [
-        Resource(
-          type: ResourceType.folder,
+        Item(
+          type: ItemType.folder,
           name: "education",
           children: [
-            Resource(type: ResourceType.file, name: "education_details.md"),
+            Item(type: ItemType.file, name: "education_details.md"),
           ],
         ),
-        Resource(
-          type: ResourceType.file,
+        Item(
+          type: ItemType.file,
           name: "interests.md",
         ),
-        Resource(
-          type: ResourceType.file,
+        Item(
+          type: ItemType.file,
           name: "intro.md",
         )
       ],
     ),
-    Resource(
-      type: ResourceType.folder,
+    Item(
+      type: ItemType.folder,
       name: "professional",
       children: [
-        Resource(type: ResourceType.file, name: "career_progression.md"),
-        Resource(type: ResourceType.file, name: "skills.md"),
-        Resource(type: ResourceType.file, name: "achievements.md"),
+        Item(type: ItemType.file, name: "career_progression.md"),
+        Item(type: ItemType.file, name: "skills.md"),
+        Item(type: ItemType.file, name: "achievements.md"),
       ],
     )
   ],

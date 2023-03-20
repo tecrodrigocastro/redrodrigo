@@ -6,10 +6,13 @@ class InfoHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final currentWidth = MediaQuery.of(context).size.width;
+    bool isMobile(BuildContext context) => currentWidth < 800;
     return Expanded(
       flex: 1,
       child: Padding(
-        padding: const EdgeInsets.only(left: 200),
+        padding:
+            isMobile(context) ? EdgeInsets.all(20) : EdgeInsets.only(left: 200),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -64,7 +67,7 @@ class InfoHome extends StatelessWidget {
                   .copyWith(color: secondaryGreyColor),
             ),
             Row(
-              children: const [
+              children: [
                 Text(
                   'const',
                   style: TextStyle(color: secondaryBlueColor),
@@ -80,11 +83,17 @@ class InfoHome extends StatelessWidget {
                   style: TextStyle(color: secondaryWhiteColor),
                 ),
                 SizedBox(width: 8),
-                Text(
-                  '"https://github.com/tecrodrigocastro"',
-                  style: TextStyle(color: accentOrangeColor),
-                  overflow: TextOverflow.ellipsis,
-                ),
+                isMobile(context)
+                    ? Text(
+                        '"https://\ngithub.com/tecrodrigocastro"',
+                        style: TextStyle(color: accentOrangeColor),
+                        overflow: TextOverflow.ellipsis,
+                      )
+                    : Text(
+                        '"https://github.com/tecrodrigocastro"',
+                        style: TextStyle(color: accentOrangeColor),
+                        overflow: TextOverflow.ellipsis,
+                      ),
                 Text(
                   ';',
                   style: TextStyle(color: secondaryWhiteColor),
