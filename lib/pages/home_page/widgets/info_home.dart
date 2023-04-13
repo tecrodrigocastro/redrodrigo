@@ -68,33 +68,33 @@ class InfoHome extends StatelessWidget {
             ),
             Row(
               children: [
-                Text(
+                const Text(
                   'const',
                   style: TextStyle(color: secondaryBlueColor),
                 ),
-                SizedBox(width: 8),
-                Text(
+                const SizedBox(width: 8),
+                const Text(
                   'githubLink',
                   style: TextStyle(color: accentGreenColor),
                 ),
-                SizedBox(width: 8),
-                Text(
+                const SizedBox(width: 8),
+                const Text(
                   '=',
                   style: TextStyle(color: secondaryWhiteColor),
                 ),
-                SizedBox(width: 8),
+                const SizedBox(width: 8),
                 isMobile(context)
-                    ? Text(
+                    ? const Text(
                         '"https://\ngithub.com/tecrodrigocastro"',
                         style: TextStyle(color: accentOrangeColor),
                         overflow: TextOverflow.ellipsis,
                       )
-                    : Text(
+                    : const Text(
                         '"https://github.com/tecrodrigocastro"',
                         style: TextStyle(color: accentOrangeColor),
                         overflow: TextOverflow.ellipsis,
                       ),
-                Text(
+                const Text(
                   ';',
                   style: TextStyle(color: secondaryWhiteColor),
                 ),

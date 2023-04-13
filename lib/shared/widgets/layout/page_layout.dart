@@ -6,15 +6,15 @@ class PageLayout extends StatelessWidget {
       {super.key,
       required this.sideBarChild,
       required this.mainAreaChild,
-      required this.pageTitle});
+      required this.workspace});
 
   final Widget sideBarChild;
   final Widget mainAreaChild;
-  final String pageTitle;
+  final String workspace;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: primaryColorDarker,
+      backgroundColor: primaryColor,
       body: Row(
         children: [
           Container(
@@ -29,7 +29,7 @@ class PageLayout extends StatelessWidget {
               children: [
                 Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: SizedBox(height: 30, child: Text(pageTitle)),
+                  child: SizedBox(height: 30, child: Text(workspace)),
                 ),
                 Expanded(
                   child: Container(
