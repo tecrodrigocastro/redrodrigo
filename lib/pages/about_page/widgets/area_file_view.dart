@@ -57,36 +57,36 @@ class _AreaFileViewState extends State<AreaFileView> {
                           child: MarkdownFileWidget(
                               filePath:
                                   'markdowns/${currentState.state.activeFile!.name}'),
-                        )
+                        ),
+                        Divider(
+                          thickness: 3,
+                          color: projectCardColor.withOpacity(0.2),
+                        ),
+                        Expanded(
+                          flex: 1,
+                          child: FutureBuilder(
+                            future: DefaultAssetBundle.of(context).loadString(
+                                'markdowns/${currentState.state.activeFile!.name}'),
+                            builder: (context, snapshot) {
+                              return SingleChildScrollView(
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                    snapshot.data ?? 'No information to show!',
+                                    style: const TextStyle(
+                                      color: secondaryGreyColor,
+                                      fontSize: 4,
+                                    ),
+                                  ),
+                                ),
+                              );
+                            },
+                          ),
+                        ),
                       ],
                     ),
                   );
                 },
-              ),
-              VerticalDivider(
-                thickness: 3,
-                color: projectCardColor.withOpacity(0.2),
-              ),
-              Expanded(
-                flex: 1,
-                child: FutureBuilder(
-                  future: DefaultAssetBundle.of(context).loadString(
-                      'markdowns/${currentState.state.activeFile!.name}'),
-                  builder: (context, snapshot) {
-                    return SingleChildScrollView(
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Text(
-                          snapshot.data ?? 'No information to show!',
-                          style: const TextStyle(
-                            color: secondaryGreyColor,
-                            fontSize: 4,
-                          ),
-                        ),
-                      ),
-                    );
-                  },
-                ),
               ),
             ],
           );
