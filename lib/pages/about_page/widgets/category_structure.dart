@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:redrodrigo/pages/about_page/widgets/expanded_component.dart';
-import 'package:redrodrigo/pages/about_page/widgets/file_tab_index.dart';
+import 'package:redrodrigo/pages/about_page/widgets/file_tab_element.dart';
 import 'package:redrodrigo/shared/enums.dart';
-import 'package:redrodrigo/shared/widgets/layout/resource.dart';
+import 'package:redrodrigo/shared/widgets/layout/item.dart';
 
 class CategoryStructure extends StatelessWidget {
   const CategoryStructure({super.key, required this.categoryItemTree});
@@ -22,7 +22,7 @@ class CategoryStructure extends StatelessWidget {
           if (e.type == ItemType.folder) {
             return ExpandedComponent(item: e);
           } else {
-            return FileTabIndex(item: e);
+            return FileTabElement(item: e);
           }
         }).toList(),
       );

@@ -5,12 +5,13 @@ import 'package:redrodrigo/pages/about_page/widgets/category_structure.dart';
 import 'package:redrodrigo/shared/widgets/layout/page_layout.dart';
 
 class AboutPage extends StatelessWidget {
+  static const aboutMePageRoute = "_about_me";
   const AboutPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return PageLayout(
-      workspace: '_about_me',
+      workspace: aboutMePageRoute,
       mainAreaChild: const AreaFileView(),
       sideBarChild: CategoryStructure(
         categoryItemTree: aboutMeItemStructure,

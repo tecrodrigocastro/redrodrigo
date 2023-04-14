@@ -20,7 +20,7 @@ class CustomFooter extends StatelessWidget {
         children: [
           Text(
             'find me in:',
-            style: Theme.of(context).textTheme.bodyText2,
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           const VerticalDivider(),
           Tooltip(
@@ -53,7 +53,7 @@ class CustomFooter extends StatelessWidget {
           const VerticalDivider(),
           Text(
             '@tecrodrigocastro',
-            style: Theme.of(context).textTheme.bodyText2,
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           Tooltip(
             message: 'Github',

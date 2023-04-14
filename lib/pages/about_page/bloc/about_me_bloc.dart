@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:redrodrigo/shared/enums.dart';
-import 'package:redrodrigo/shared/widgets/layout/resource.dart';
+import 'package:redrodrigo/shared/widgets/layout/item.dart';
 
 part 'about_me_bloc.freezed.dart';
 part 'about_me_event.dart';

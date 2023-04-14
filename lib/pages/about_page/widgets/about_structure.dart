@@ -1,5 +1,5 @@
 import 'package:redrodrigo/shared/enums.dart';
-import 'package:redrodrigo/shared/widgets/layout/resource.dart';
+import 'package:redrodrigo/shared/widgets/layout/item.dart';
 
 final ItemTree aboutMeItemStructure = ItemTree(
   treeTitle: "about_me",

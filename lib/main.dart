@@ -6,11 +6,11 @@ import 'package:redrodrigo/shared/constants/constants.dart';
 import 'package:redrodrigo/shared/widgets/tab_bar/tab_bar_controller.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const AppWidget());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class AppWidget extends StatelessWidget {
+  const AppWidget({super.key});
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
