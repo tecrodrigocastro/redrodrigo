@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:redrodrigo/pages/about_page/about_page.dart';
+import 'package:redrodrigo/pages/contact_page/contact_page.dart';
 import 'package:redrodrigo/pages/home_page/home_page.dart';
 import 'package:redrodrigo/pages/projects_page/projects_page.dart';
-import 'package:redrodrigo/shared/constants/colors_schema.dart';
 import 'package:redrodrigo/shared/widgets/custom_footer.dart';
 import 'package:redrodrigo/shared/widgets/tab_bar/tab_bar_header.dart';
 
@@ -26,10 +26,7 @@ class TabBarController extends StatelessWidget {
               HomePage(),
               AboutPage(),
               ProjectsPage(),
-              Scaffold(
-                backgroundColor: primaryColor,
-                body: Center(child: Text('Contact-me')),
-              ),
+              ContactPage(),
             ],
           ),
           bottomNavigationBar: const CustomFooter(),
