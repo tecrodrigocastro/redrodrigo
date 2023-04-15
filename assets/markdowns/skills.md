@@ -4,11 +4,15 @@
 
 - Php
 - Dart
-
+- Html
+- SQL
 ### Frameworks
 
 - Flutter
 - Laravel
+- Bootstrap
+- MySQL
+- Firebase
 
 ### Tools
 
@@ -19,3 +23,4 @@
 - Postman
 - Docker
 - Linux
+- Arduino
