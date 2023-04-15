@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:redrodrigo/pages/about_page/cubit/about_cubit.dart';
+import 'package:redrodrigo/pages/projects_page/cubit/projects_cubit_cubit.dart';
 import 'package:redrodrigo/shared/constants/colors_schema.dart';
 import 'package:redrodrigo/shared/constants/constants.dart';
 import 'package:redrodrigo/shared/widgets/tab_bar/tab_bar_controller.dart';
@@ -16,6 +17,7 @@ class AppWidget extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (_) => AboutCubit()),
+        BlocProvider(create: (_) => ProjectsCubit()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

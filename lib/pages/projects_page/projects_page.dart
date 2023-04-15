@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:redrodrigo/pages/projects_page/widgets/project_sidebar.dart';
+import 'package:redrodrigo/pages/projects_page/widgets/projects_main_content.dart';
 import 'package:redrodrigo/shared/widgets/layout/page_layout.dart';
 
 class ProjectsPage extends StatelessWidget {
@@ -9,11 +10,9 @@ class ProjectsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return PageLayout(
-      sideBarChild: const ProjectsSideBar(),
-      mainAreaChild: Container(
-        color: Colors.red,
-      ),
+    return const PageLayout(
+      sideBarChild: ProjectsSideBar(),
+      mainAreaChild: ProjectsMainContent(),
       workspace: projectPageRoute,
     );
   }

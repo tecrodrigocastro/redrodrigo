@@ -1,3 +1,3 @@
 enum ItemType { folder, file }
 
-enum TechStack { flutter, php, laravel, bootstrap }
+enum TechStack { flutter, php, laravel, bootstrap, dart, mysql }
