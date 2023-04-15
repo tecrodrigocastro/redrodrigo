@@ -18,7 +18,7 @@ List<ProjectEntity> listOfProjects = [
       'Used freezed + build_runner',
       'Snack Game',
     ],
-    thumbnail: 'images/project.png',
+    thumbnail: 'assets/images/project.png',
   ),
   ProjectEntity(
     title: 'E-commerce',
@@ -37,7 +37,7 @@ List<ProjectEntity> listOfProjects = [
       'Used freezed + build_runner',
       'Snack Game',
     ],
-    thumbnail: 'images/project.png',
+    thumbnail: 'assets/images/project.png',
   ),
   ProjectEntity(
     title: 'CRUD',
@@ -56,7 +56,7 @@ List<ProjectEntity> listOfProjects = [
       'Used freezed + build_runner',
       'Snack Game',
     ],
-    thumbnail: 'images/project.png',
+    thumbnail: 'assets/images/project.png',
   ),
   ProjectEntity(
     title: 'Portfolio Website',
@@ -74,7 +74,7 @@ List<ProjectEntity> listOfProjects = [
       'Used freezed + build_runner',
       'Snack Game',
     ],
-    thumbnail: 'images/project.png',
+    thumbnail: 'assets/images/project.png',
   ),
   ProjectEntity(
     title: 'E-commerce',
@@ -93,7 +93,7 @@ List<ProjectEntity> listOfProjects = [
       'Used freezed + build_runner',
       'Snack Game',
     ],
-    thumbnail: 'images/project.png',
+    thumbnail: 'assets/images/project.png',
   ),
   ProjectEntity(
     title: 'CRUD',
@@ -112,6 +112,6 @@ List<ProjectEntity> listOfProjects = [
       'Used freezed + build_runner',
       'Snack Game',
     ],
-    thumbnail: 'images/project.png',
+    thumbnail: 'assets/images/project.png',
   ),
 ];

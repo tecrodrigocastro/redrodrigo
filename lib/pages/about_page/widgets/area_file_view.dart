@@ -57,7 +57,7 @@ class _AreaFileViewState extends State<AreaFileView> {
                           flex: 5,
                           child: MarkdownFileWidget(
                               filePath:
-                                  'markdowns/${currentState.state.activeFile!.name}'),
+                                  'assets/markdowns/${currentState.state.activeFile!.name}'),
                         ),
                         Divider(
                           thickness: 3,
@@ -67,7 +67,7 @@ class _AreaFileViewState extends State<AreaFileView> {
                           flex: 1,
                           child: FutureBuilder(
                             future: DefaultAssetBundle.of(context).loadString(
-                                'markdowns/${currentState.state.activeFile!.name}'),
+                                'assets/markdowns/${currentState.state.activeFile!.name}'),
                             builder: (context, snapshot) {
                               return SingleChildScrollView(
                                 child: Padding(
