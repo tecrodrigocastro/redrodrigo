@@ -88,6 +88,15 @@ class _ContatcFormState extends State<ContatcForm> {
                                 Radius.circular(20),
                               ),
                             ),
+                            errorBorder: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                color: Colors.red,
+                                style: BorderStyle.solid,
+                              ),
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(20),
+                              ),
+                            ),
                           ),
                         ),
                       ),
@@ -124,6 +133,15 @@ class _ContatcFormState extends State<ContatcForm> {
                             enabledBorder: OutlineInputBorder(
                               borderSide: BorderSide(
                                 color: secondaryGreyColor,
+                                style: BorderStyle.solid,
+                              ),
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(20),
+                              ),
+                            ),
+                            errorBorder: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                color: Colors.red,
                                 style: BorderStyle.solid,
                               ),
                               borderRadius: BorderRadius.all(
@@ -169,6 +187,15 @@ class _ContatcFormState extends State<ContatcForm> {
                                 Radius.circular(20),
                               ),
                             ),
+                            errorBorder: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                color: Colors.red,
+                                style: BorderStyle.solid,
+                              ),
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(20),
+                              ),
+                            ),
                           ),
                         ),
                       ),
@@ -177,7 +204,35 @@ class _ContatcFormState extends State<ContatcForm> {
                         style: TextButton.styleFrom(
                           backgroundColor: primaryColorDarker,
                         ),
-                        onPressed: () {},
+                        onPressed: () async {
+                          if (_formKey.currentState!.validate()) {
+                            _formKey.currentState!.save();
+                            const success = true;
+                            if (success) {
+                              currenteState.cleanState();
+                              setState(() {
+                                messageCustom = true;
+                              });
+                            }
+                            currenteState.cleanState();
+                            _formKey.currentState!.reset();
+                            if (!_formKey.currentState!.mounted) return;
+                            // ignore: use_build_context_synchronously
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              const SnackBar(
+                                backgroundColor: accentOrangeColor,
+                                behavior: SnackBarBehavior.fixed,
+                                duration: Duration(seconds: 8),
+                                content: Text(
+                                  "Oo ooh... Some issues! \nI will fix this, Please directly ping me on my socials, Sorry for the trouble!",
+                                  style: TextStyle(
+                                    color: secondaryWhiteColor,
+                                  ),
+                                ),
+                              ),
+                            );
+                          }
+                        },
                         child: const Text(
                           'submit-message',
                           style: TextStyle(color: secondaryWhiteColor),
