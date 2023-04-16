@@ -1,10 +1,8 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:redrodrigo/shared/constants/colors_schema.dart';
 import 'package:redrodrigo/shared/widgets/tab_bar/tab_element.dart';
 
-class TabBarHeader extends StatefulWidget with PreferredSizeWidget {
+class TabBarHeader extends StatefulWidget implements PreferredSizeWidget {
   const TabBarHeader({super.key});
 
   @override
@@ -41,7 +39,7 @@ class _TabBarHeaderState extends State<TabBarHeader> {
         padding: const EdgeInsets.all(8),
         child: Text(
           'rodrigo-castro',
-          style: Theme.of(context).textTheme.bodyText1,
+          style: Theme.of(context).textTheme.bodyLarge,
         ),
       ),
       actions: [
@@ -54,8 +52,8 @@ class _TabBarHeaderState extends State<TabBarHeader> {
             style: TextButton.styleFrom(
               foregroundColor: secondaryGreyColor,
             ),
-            child: Row(
-              children: const [
+            child: const Row(
+              children: [
                 VerticalDivider(),
                 SizedBox(
                   width: 4,

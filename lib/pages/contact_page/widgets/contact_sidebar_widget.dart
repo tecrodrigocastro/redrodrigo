@@ -28,12 +28,12 @@ class _ContactSideBarState extends State<ContactSideBar> {
               horizontal: BorderSide(color: secondaryGreyColor),
             ),
           ),
-          child: Padding(
-            padding: const EdgeInsets.all(8),
+          child: const Padding(
+            padding: EdgeInsets.all(8),
             child: SizedBox(
               height: 30,
               child: Row(
-                children: const [
+                children: [
                   Icon(Icons.arrow_drop_down_outlined),
                   Text(
                     'find-me-also-in',
