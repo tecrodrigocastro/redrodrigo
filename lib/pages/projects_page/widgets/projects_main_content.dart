@@ -17,7 +17,10 @@ class ProjectsMainContent extends StatelessWidget {
         Container(
           height: 35,
           width: double.infinity,
-          color: primaryColorDark,
+          decoration: const BoxDecoration(
+              color: primaryColor,
+              border: Border.symmetric(
+                  horizontal: BorderSide(color: secondaryWhiteColor))),
           child: const ProjectsTabElement(),
         ),
         if (projectsState.state.activeProjects!.isEmpty) ...[

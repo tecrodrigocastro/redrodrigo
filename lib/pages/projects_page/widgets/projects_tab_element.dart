@@ -22,7 +22,7 @@ class _ProjectsTabElementState extends State<ProjectsTabElement> {
     techStackToSelectionMapping.forEach((key, value) {
       if (value == true) {
         titleString =
-            '${titleString.isEmpty ? '' : '$titleString,'} ✔️ ${key.name.toUpperCase()}';
+            '${titleString.isEmpty ? '' : '$titleString;'} ✔️ ${key.name.toUpperCase()}';
       }
     });
     return titleString.isEmpty ? 'All-Projects' : titleString;
@@ -36,7 +36,7 @@ class _ProjectsTabElementState extends State<ProjectsTabElement> {
       alignment: Alignment.topLeft,
       child: Container(
         padding: const EdgeInsets.all(4),
-        color: primaryColorDarker,
+        color: primaryColor,
         child: Row(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.center,

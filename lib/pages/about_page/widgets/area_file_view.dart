@@ -29,7 +29,14 @@ class _AreaFileViewState extends State<AreaFileView> {
               Container(
                 width: double.infinity,
                 height: 35,
-                color: primaryColorDark,
+                decoration: const BoxDecoration(
+                  color: primaryColor,
+                  border: Border.symmetric(
+                    horizontal: BorderSide(
+                      color: secondaryWhiteColor,
+                    ),
+                  ),
+                ),
                 child: BlocConsumer<AboutCubit, AboutState>(
                   listener: (context, state) {
                     // TODO: implement listener
@@ -101,8 +108,8 @@ class _AreaFileViewState extends State<AreaFileView> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Row(
-                        children: const [
+                      const Row(
+                        children: [
                           Text(
                             'PROBLEMS  ',
                             style: TextStyle(

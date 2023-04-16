@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:redrodrigo/pages/contact_page/cubit/contact_cubit.dart';
 import 'package:redrodrigo/pages/contact_page/entity/form_entity.dart';
+import 'package:redrodrigo/pages/contact_page/widgets/contact_form_snippet.dart';
 import 'package:redrodrigo/pages/contact_page/widgets/messageCustom.dart';
 import 'package:redrodrigo/shared/constants/colors_schema.dart';
 
@@ -251,14 +252,8 @@ class _ContatcFormState extends State<ContatcForm> {
           Expanded(
             flex: 1,
             child: Padding(
-              padding: const EdgeInsets.all(20).copyWith(top: 50),
-              child: Container(
-                color: Colors.red,
-                child: const Column(
-                  children: [],
-                ),
-              ),
-            ),
+                padding: const EdgeInsets.all(20).copyWith(top: 50),
+                child: const ContactFormSnippet()),
           ),
         ]
       ],
