@@ -4,7 +4,7 @@ import 'package:redrodrigo/pages/projects_page/widgets/projects_main_content.dar
 import 'package:redrodrigo/shared/widgets/layout/page_layout.dart';
 
 class ProjectsPage extends StatelessWidget {
-  static const projectPageRoute = '_projects';
+  static const projectPageRoute = '_projetos';
 
   const ProjectsPage({super.key});
 

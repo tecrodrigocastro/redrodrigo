@@ -25,7 +25,7 @@ class _ProjectsTabElementState extends State<ProjectsTabElement> {
             '${titleString.isEmpty ? '' : '$titleString;'} ✔️ ${key.name.toUpperCase()}';
       }
     });
-    return titleString.isEmpty ? 'All-Projects' : titleString;
+    return titleString.isEmpty ? 'Todos-Projetos' : titleString;
   }
 
   @override

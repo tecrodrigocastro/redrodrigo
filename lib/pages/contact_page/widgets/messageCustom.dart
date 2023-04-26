@@ -15,7 +15,7 @@ class CustomMessage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: const [
             Text(
-              "Thanks for reaching out!",
+              "Agradeço seu contato!",
               style: TextStyle(
                 fontSize: 18,
                 color: secondaryWhiteColor,
@@ -31,7 +31,7 @@ class CustomMessage extends StatelessWidget {
           ],
         ),
         const Text(
-          "I Will reply back soon!",
+          "Eu responderei de volta em breve!",
           style: TextStyle(color: secondaryGreyColor),
         ),
         const SizedBox(
@@ -44,7 +44,7 @@ class CustomMessage extends StatelessWidget {
             style: ElevatedButton.styleFrom(
               backgroundColor: darkGreyColor,
             ),
-            child: const Text("Send New Message"))
+            child: const Text("Enviar Nova Mensagem"))
       ],
     );
   }

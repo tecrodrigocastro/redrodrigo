@@ -47,7 +47,7 @@ class _ContactMainContentState extends State<ContactMainContent> {
                     ), */
                     const SizedBox(width: 6),
                     Text(
-                      'contacts',
+                      'formulario',
                       style: TextStyle(
                         color: isSelected
                             ? secondaryWhiteColor

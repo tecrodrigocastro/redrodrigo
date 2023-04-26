@@ -1,3 +1,3 @@
 ## Achievements  
 ---
-- Under Development
+- Em desenvolvimento

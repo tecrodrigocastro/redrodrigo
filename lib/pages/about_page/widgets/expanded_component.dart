@@ -27,7 +27,7 @@ class _ExpandedComponentState extends State<ExpandedComponent> {
         currentState = context.read<AboutCubit>();
         if (currentState.state.openFiles != null &&
             currentState.state.openFiles!.length == 1 &&
-            widget.item.name == 'personal') {
+            widget.item.name == 'pessoal') {
           setState(() {
             isExpanded = true;
           });

@@ -27,10 +27,10 @@ class _TabBarHeaderState extends State<TabBarHeader> {
         labelColor: secondaryWhiteColor,
         unselectedLabelColor: primaryColorLight,
         tabs: [
-          TabElement(title: '_hello'),
-          TabElement(title: '_about_me'),
-          TabElement(title: '_projects'),
-          TabElement(title: '_contact_me'),
+          TabElement(title: '_ola'),
+          TabElement(title: '_sobre_mim'),
+          TabElement(title: '_projetos'),
+          TabElement(title: '_contate_me'),
           //TabElement(title: '_contact_me'),
         ],
       ),
@@ -44,7 +44,7 @@ class _TabBarHeaderState extends State<TabBarHeader> {
       ),
       actions: [
         Tooltip(
-          message: 'language',
+          message: 'linguagem',
           child: TextButton(
             onPressed: () {
               //DefaultTabController.of(context)!.animateTo(3);
@@ -59,7 +59,7 @@ class _TabBarHeaderState extends State<TabBarHeader> {
                   width: 4,
                 ),
                 Text(
-                  '_language',
+                  '_linguagem',
                 ),
                 SizedBox(
                   width: 4,

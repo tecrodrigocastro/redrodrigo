@@ -6,7 +6,7 @@ import 'package:redrodrigo/pages/contact_page/widgets/messageCustom.dart';
 import 'package:redrodrigo/shared/widgets/layout/page_layout.dart';
 
 class ContactPage extends StatefulWidget {
-  static const contactPageRoute = '_contact';
+  static const contactPageRoute = '_contate_me';
 
   const ContactPage({super.key});
 

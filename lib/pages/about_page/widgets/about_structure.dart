@@ -2,22 +2,22 @@ import 'package:redrodrigo/shared/enums.dart';
 import 'package:redrodrigo/shared/widgets/layout/item.dart';
 
 final ItemTree aboutMeItemStructure = ItemTree(
-  treeTitle: "about_me",
+  treeTitle: "sobre_mim",
   treeStructure: [
     Item(
       type: ItemType.folder,
-      name: "personal",
+      name: "pessoal",
       children: [
         Item(
           type: ItemType.folder,
-          name: "education",
+          name: "educação",
           children: [
-            Item(type: ItemType.file, name: "education_details.md"),
+            Item(type: ItemType.file, name: "detalhes_educacao.md"),
           ],
         ),
         Item(
           type: ItemType.file,
-          name: "interests.md",
+          name: "interesses.md",
         ),
         Item(
           type: ItemType.file,
@@ -27,11 +27,11 @@ final ItemTree aboutMeItemStructure = ItemTree(
     ),
     Item(
       type: ItemType.folder,
-      name: "professional",
+      name: "profissional",
       children: [
-        Item(type: ItemType.file, name: "career_progression.md"),
-        Item(type: ItemType.file, name: "skills.md"),
-        Item(type: ItemType.file, name: "achievements.md"),
+        Item(type: ItemType.file, name: "pregressao_carreira.md"),
+        Item(type: ItemType.file, name: "habilidades.md"),
+        Item(type: ItemType.file, name: "conquistas.md"),
       ],
     )
   ],

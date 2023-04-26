@@ -98,7 +98,7 @@ class _HomePageMobileState extends State<HomePageMobile> {
                   ),
                 ),
                 child: Text(
-                  '_aboute-me',
+                  '_about-me',
                   style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ),

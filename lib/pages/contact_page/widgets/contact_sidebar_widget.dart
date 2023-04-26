@@ -38,7 +38,7 @@ class _ContactSideBarState extends State<ContactSideBar> {
                 children: const [
                   Icon(Icons.arrow_drop_down_outlined),
                   Text(
-                    'find-me-also-in',
+                    'me-encontre-em',
                     style: TextStyle(color: secondaryWhiteColor),
                   )
                 ],
@@ -46,9 +46,9 @@ class _ContactSideBarState extends State<ContactSideBar> {
             ),
           ),
         ),
-        const ItemSideBar(icon: Icons.link, title: 'Youtube Channel'),
-        const ItemSideBar(icon: Icons.link, title: 'Linkedin Profile'),
-        const ItemSideBar(icon: Icons.link, title: 'Github Profile'),
+        const ItemSideBar(icon: Icons.link, title: 'Canal do Youtube'),
+        const ItemSideBar(icon: Icons.link, title: 'Perfil do linkedIn'),
+        const ItemSideBar(icon: Icons.link, title: 'Perfil do Github'),
       ],
     );
   }

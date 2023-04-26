@@ -5,7 +5,7 @@ import 'package:redrodrigo/pages/about_page/widgets/category_structure.dart';
 import 'package:redrodrigo/shared/widgets/layout/page_layout.dart';
 
 class AboutPage extends StatelessWidget {
-  static const aboutMePageRoute = "_about_me";
+  static const aboutMePageRoute = "_sobre_mim";
   const AboutPage({super.key});
 
   @override

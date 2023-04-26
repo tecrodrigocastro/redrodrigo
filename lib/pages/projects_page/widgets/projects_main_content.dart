@@ -27,7 +27,7 @@ class ProjectsMainContent extends StatelessWidget {
           const Expanded(
             child: Center(
               child: Text(
-                  'No projects to show with the selected TechStack combination, \n Scope for improvement, one thing at a time ;)'),
+                  'Nenhum projeto para mostrar com a combinação de TechStack selecionada. ;)'),
             ),
           ),
         ] else ...[

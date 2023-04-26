@@ -13,7 +13,7 @@ class CategoryStructure extends StatelessWidget {
     if (categoryItemTree.treeStructure == null ||
         categoryItemTree.treeStructure!.isEmpty == true) {
       return const Text(
-        'No structure to show',
+        'Sem estrutura para mostrar',
         style: TextStyle(color: Colors.white),
       );
     } else {

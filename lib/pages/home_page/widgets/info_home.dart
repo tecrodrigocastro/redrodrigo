@@ -28,7 +28,7 @@ class InfoHome extends StatelessWidget {
                 width: 8,
               ),
               Text(
-                'Hi all, I am;',
+                'Olá a todos, eu sou;',
                 style: Theme.of(context).textTheme.labelLarge!.copyWith(
                       color: primaryColorLight,
                     ),
@@ -53,20 +53,47 @@ class InfoHome extends StatelessWidget {
             height: 12,
           ),
           Text(
-            '// website developed in flutter!',
+            '// site desenvolvido em flutter!',
             style: Theme.of(context)
                 .textTheme
                 .labelLarge!
                 .copyWith(color: secondaryGreyColor),
           ),
           Text(
-            '// see my github page',
+            '// veja minha página github',
             style: Theme.of(context)
                 .textTheme
                 .labelLarge!
                 .copyWith(color: secondaryGreyColor),
           ),
-          Row(
+          RichText(
+            text: const TextSpan(
+              text: 'const  ',
+              style: TextStyle(color: secondaryBlueColor),
+              children: [
+                TextSpan(
+                  text: 'githubLink  ',
+                  style: TextStyle(color: accentGreenColor),
+                ),
+                TextSpan(
+                  text: '=  ',
+                  style: TextStyle(color: secondaryWhiteColor),
+                ),
+                TextSpan(
+                  text: '"https://github.com/tecrodrigocastro"',
+                  style: TextStyle(
+                    color: accentOrangeColor,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ),
+                TextSpan(
+                  text: ';',
+                  style: TextStyle(color: secondaryWhiteColor),
+                ),
+              ],
+            ),
+          ),
+/*           Row(
             children: [
               const Text(
                 'const',
@@ -99,7 +126,7 @@ class InfoHome extends StatelessWidget {
                 style: TextStyle(color: secondaryWhiteColor),
               ),
             ],
-          ),
+          ), */
         ],
       ),
     );
