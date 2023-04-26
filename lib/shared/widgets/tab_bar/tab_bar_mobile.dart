@@ -31,8 +31,8 @@ class _TabBarMobileState extends State<TabBarMobile> {
             style: TextButton.styleFrom(
               foregroundColor: secondaryGreyColor,
             ),
-            child: const Row(
-              children: [
+            child: Row(
+              children: const [
                 VerticalDivider(),
                 SizedBox(
                   width: 4,

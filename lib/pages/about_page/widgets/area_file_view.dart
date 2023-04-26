@@ -108,8 +108,8 @@ class _AreaFileViewState extends State<AreaFileView> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Row(
-                        children: [
+                      Row(
+                        children: const [
                           Text(
                             'PROBLEMS  ',
                             style: TextStyle(
