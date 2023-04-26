@@ -27,61 +27,62 @@ class _ContactMainContentState extends State<ContactMainContent> {
             ),
           ),
           child: Row(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                TextButton(
-                  onHover: (hover) {},
-                  onPressed: () {
-                    setState(() {
-                      isSelected = !isSelected;
-                    });
-                  },
-                  child: Row(
-                    children: [
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              TextButton(
+                onHover: (hover) {},
+                onPressed: () {
+                  setState(() {
+                    isSelected = !isSelected;
+                  });
+                },
+                child: Row(
+                  children: [
 /*                     Image.asset(
                       'assets/icons/markdown.webp',
                       color: secondaryWhiteColor,
                       width: 16,
                       height: 16,
                     ), */
-                      const SizedBox(width: 6),
-                      Text(
-                        'contacts',
-                        style: TextStyle(
-                          color: isSelected
-                              ? secondaryWhiteColor
-                              : primaryColorLight,
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-                isSelected
-                    ? IconButton(
-                        mouseCursor: SystemMouseCursors.click,
-                        splashRadius: 12,
-                        onPressed: () {
-                          isSelected = !isSelected;
-                        },
-                        icon: const Icon(
-                          Icons.close,
-                          size: 14,
-                        ),
-                      )
-                    : IconButton(
-                        mouseCursor: SystemMouseCursors.basic,
-                        onPressed: () {
-                          isSelected = !isSelected;
-                        },
-                        splashRadius: 1,
-                        icon: const Icon(
-                          Icons.circle,
-                          size: 12,
-                          color: primaryColorLight,
-                        ),
+                    const SizedBox(width: 6),
+                    Text(
+                      'contacts',
+                      style: TextStyle(
+                        color: isSelected
+                            ? secondaryWhiteColor
+                            : primaryColorLight,
                       ),
-              ]),
+                    )
+                  ],
+                ),
+              ),
+              isSelected
+                  ? IconButton(
+                      mouseCursor: SystemMouseCursors.click,
+                      splashRadius: 12,
+                      onPressed: () {
+                        isSelected = !isSelected;
+                      },
+                      icon: const Icon(
+                        Icons.close,
+                        size: 14,
+                      ),
+                    )
+                  : IconButton(
+                      mouseCursor: SystemMouseCursors.basic,
+                      onPressed: () {
+                        isSelected = !isSelected;
+                      },
+                      splashRadius: 1,
+                      icon: const Icon(
+                        Icons.circle,
+                        size: 12,
+                        color: primaryColorLight,
+                      ),
+                    ),
+            ],
+          ),
         ),
         const Expanded(
           child: ContatcForm(),

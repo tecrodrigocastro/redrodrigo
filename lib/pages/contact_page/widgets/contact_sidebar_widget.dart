@@ -21,6 +21,7 @@ class _ContactSideBarState extends State<ContactSideBar> {
         //const SizedBox(height: 5),
         const ItemSideBar(icon: Icons.phone, title: '+55 85 99154-6543'),
         const SizedBox(height: 15),
+
         Container(
           width: 360,
           decoration: const BoxDecoration(
@@ -33,6 +34,7 @@ class _ContactSideBarState extends State<ContactSideBar> {
             child: SizedBox(
               height: 30,
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: const [
                   Icon(Icons.arrow_drop_down_outlined),
                   Text(

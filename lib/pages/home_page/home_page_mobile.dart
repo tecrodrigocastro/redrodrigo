@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:redrodrigo/pages/about_page/about_page_mobile.dart';
+import 'package:redrodrigo/pages/contact_page/contact_page_mobile.dart';
 import 'package:redrodrigo/pages/home_page/widgets/info_home.dart';
 import 'package:redrodrigo/pages/projects_page/projects_page_mobile.dart';
 import 'package:redrodrigo/shared/constants/colors_schema.dart';
@@ -166,9 +167,7 @@ class _HomePageMobileState extends State<HomePageMobile> {
             ),
             const AboutPageMobile(),
             const ProjectsPageMobile(),
-            const Center(
-              child: Text('4'),
-            ),
+            const ContactPageMobile(),
           ],
         ),
       ),
