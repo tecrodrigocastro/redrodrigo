@@ -4,7 +4,7 @@ import 'package:redrodrigo/pages/contact_page/contact_page_mobile.dart';
 import 'package:redrodrigo/pages/home_page/widgets/info_home.dart';
 import 'package:redrodrigo/pages/projects_page/projects_page_mobile.dart';
 import 'package:redrodrigo/shared/constants/colors_schema.dart';
-import 'package:redrodrigo/shared/widgets/custom_footer.dart';
+import 'package:redrodrigo/shared/widgets/custom_footer_mobile.dart';
 
 class HomePageMobile extends StatefulWidget {
   const HomePageMobile({super.key});
@@ -152,7 +152,7 @@ class _HomePageMobileState extends State<HomePageMobile> {
           ],
         ),
       ),
-      bottomNavigationBar: const CustomFooter(),
+      bottomNavigationBar: const CustomFooterMobile(),
       body: SizedBox(
         width: double.infinity,
         height: MediaQuery.of(context).size.height,

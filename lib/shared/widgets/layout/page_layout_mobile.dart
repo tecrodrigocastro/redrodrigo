@@ -12,22 +12,27 @@ class PageLayoutMobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: SizedBox(height: 30, child: Text(workspace)),
-        ),
-        SizedBox(
-          height: 300,
-          width: double.infinity,
-          child: ListView(
-            children: [aboveChild],
+    return SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SizedBox(height: 30, child: Text(workspace)),
           ),
-        ),
-        Expanded(child: mainAreaChild)
-      ],
+          SizedBox(
+            height: 300,
+            width: double.infinity,
+            child: ListView(
+              children: [aboveChild],
+            ),
+          ),
+          SizedBox(
+            height: 600,
+            child: mainAreaChild,
+          ),
+        ],
+      ),
     );
   }
 }

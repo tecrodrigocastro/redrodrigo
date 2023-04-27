@@ -76,15 +76,13 @@ class _AreaFileViewMobileState extends State<AreaFileViewMobile> {
                             future: DefaultAssetBundle.of(context).loadString(
                                 'assets/markdowns/${currentState.state.activeFile!.name}'),
                             builder: (context, snapshot) {
-                              return SingleChildScrollView(
-                                child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Text(
-                                    snapshot.data ?? 'No information to show!',
-                                    style: const TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 4,
-                                    ),
+                              return Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(
+                                  snapshot.data ?? 'No information to show!',
+                                  style: const TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 4,
                                   ),
                                 ),
                               );

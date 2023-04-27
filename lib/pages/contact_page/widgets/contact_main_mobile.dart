@@ -13,8 +13,6 @@ class _ContactMainMobileState extends State<ContactMainMobile> {
 
   @override
   Widget build(BuildContext context) {
-    return const Expanded(
-      child: ContactFormMobile(),
-    );
+    return const ContactFormMobile();
   }
 }
