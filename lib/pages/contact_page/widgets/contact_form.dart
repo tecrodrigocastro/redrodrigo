@@ -110,7 +110,7 @@ class _ContatcFormState extends State<ContatcForm> {
                           },
                           validator: ((value) {
                             if (value == null || value.isEmpty) {
-                              return 'Email is required!';
+                              return 'O email é obrigatório!';
                             } else if (!RegExp(
                                     r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
                                 .hasMatch(value)) {

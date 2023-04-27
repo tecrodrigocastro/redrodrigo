@@ -1,7 +1,9 @@
 import 'dart:async';
 import 'dart:math';
+import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:redrodrigo/pages/home_page/widgets/snack_game/enums.dart';
 import 'package:redrodrigo/pages/home_page/widgets/snack_game/widgets/box_area.dart';
 import 'package:redrodrigo/pages/home_page/widgets/snack_game/widgets/food_area.dart';
@@ -28,6 +30,32 @@ class _SnackGameState extends State<SnackGame> {
   void initState() {
     super.initState();
     initialiseSnake();
+    window.onKeyData = (final keyData) {
+      if (keyData.logical == LogicalKeyboardKey.arrowRight.keyId) {
+        setState(() {
+          snakeDirection = SnakeDirection.Right;
+        });
+      }
+      if (keyData.logical == LogicalKeyboardKey.arrowLeft.keyId) {
+        setState(() {
+          snakeDirection = SnakeDirection.Left;
+        });
+      }
+      if (keyData.logical == LogicalKeyboardKey.arrowUp.keyId) {
+        setState(() {
+          snakeDirection = SnakeDirection.Up;
+        });
+      }
+      if (keyData.logical == LogicalKeyboardKey.arrowDown.keyId) {
+        setState(() {
+          snakeDirection = SnakeDirection.Down;
+        });
+      }
+      if (keyData.logical == LogicalKeyboardKey.space.keyId) {
+        startGame();
+      }
+      return false;
+    };
   }
 
   void initialiseSnake() {
@@ -38,7 +66,7 @@ class _SnackGameState extends State<SnackGame> {
 
   void startGame() {
     isGameRunning = true;
-    timer = Timer.periodic(Duration(milliseconds: 300), (timer) {
+    timer = Timer.periodic(const Duration(milliseconds: 300), (timer) {
       moveSnake();
 
       isGameOver();
@@ -118,7 +146,7 @@ class _SnackGameState extends State<SnackGame> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onVerticalDragUpdate: (dragUpdateDetais) {
+      /* onVerticalDragUpdate: (dragUpdateDetais) {
         if (dragUpdateDetais.delta.dy > 0) {
           print("Downward");
           snakeDirection = SnakeDirection.Down;
@@ -139,7 +167,7 @@ class _SnackGameState extends State<SnackGame> {
         }
 
         setState(() {});
-      },
+      }, */
       child: Scaffold(
         backgroundColor: primaryColor,
         body: Column(
@@ -166,17 +194,17 @@ class _SnackGameState extends State<SnackGame> {
               ),
             ),
             Text('Score: $score'),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
             isGameRunning
-                ? SizedBox()
+                ? const SizedBox()
                 : ElevatedButton(
                     onPressed: startGame,
                     style:
                         ElevatedButton.styleFrom(backgroundColor: Colors.white),
-                    child: Text(
-                      "Start Game",
+                    child: const Text(
+                      "Iniciar Jogo",
                       style: TextStyle(color: Colors.black),
                     ),
                   ),
@@ -185,12 +213,12 @@ class _SnackGameState extends State<SnackGame> {
                     onPressed: restartGame,
                     style:
                         ElevatedButton.styleFrom(backgroundColor: Colors.white),
-                    child: Text(
-                      "Retry",
+                    child: const Text(
+                      "Tentar Novamente",
                       style: TextStyle(color: Colors.black),
                     ),
                   )
-                : SizedBox(),
+                : const SizedBox(),
           ],
         ),
       ),

@@ -48,7 +48,7 @@ class _ContactFormMobileState extends State<ContactFormMobile> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text('_name:'),
+                      const Text('_nome:'),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: TextFormField(
@@ -57,7 +57,7 @@ class _ContactFormMobileState extends State<ContactFormMobile> {
                           },
                           validator: (value) {
                             if (value == null || value.isEmpty) {
-                              return 'Name is required!';
+                              return 'O nome é obrigatório!';
                             }
                             return null;
                           },
@@ -109,11 +109,11 @@ class _ContactFormMobileState extends State<ContactFormMobile> {
                           },
                           validator: ((value) {
                             if (value == null || value.isEmpty) {
-                              return 'Email is required!';
+                              return 'O email é obrigatório!';
                             } else if (!RegExp(
                                     r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
                                 .hasMatch(value)) {
-                              return 'Please enter a valid email address!';
+                              return 'Por favor insira um endereço de e-mail válido!';
                             }
                             return null;
                           }),
@@ -151,7 +151,7 @@ class _ContactFormMobileState extends State<ContactFormMobile> {
                           ),
                         ),
                       ),
-                      const Text('_message:'),
+                      const Text('_mensagem:'),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: TextFormField(
@@ -160,7 +160,7 @@ class _ContactFormMobileState extends State<ContactFormMobile> {
                           },
                           validator: ((value) {
                             if (value == null || value.isEmpty) {
-                              return 'Please submit your message !';
+                              return 'Por favor, envie sua mensagem !';
                             }
                             return null;
                           }),
@@ -224,7 +224,7 @@ class _ContactFormMobileState extends State<ContactFormMobile> {
                                 behavior: SnackBarBehavior.fixed,
                                 duration: Duration(seconds: 8),
                                 content: Text(
-                                  "Oo ooh... Some issues! \nI will fix this, Please directly ping me on my socials, Sorry for the trouble!",
+                                  "Algum problema Aconteceu! \nVou consertar isso, desculpe pelo problema!",
                                   style: TextStyle(
                                     color: secondaryWhiteColor,
                                   ),
@@ -234,7 +234,7 @@ class _ContactFormMobileState extends State<ContactFormMobile> {
                           }
                         },
                         child: const Text(
-                          'submit-message',
+                          'enviar-mensagem',
                           style: TextStyle(color: secondaryWhiteColor),
                         ),
                       ),
