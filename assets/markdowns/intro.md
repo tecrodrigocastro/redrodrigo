@@ -1,4 +1,13 @@
-# Introduction
+# Introdução
+
+---
+
+## Resumo
+
+Sou Rodrigo Castro, 23 anos, totalmente apaixonado por desenvolvimento mobile. Formado em Análise e Desenvolvimento de Sistemas, comecei neste mundo em 2014,
+quando entrei em contato com PHP e desde então sempre venho estudando e aprimorando minhas práticas de programação.
+Atualmente estudando e aplicando conhecimentos sobre Flutter me apaixonei pela linguagem, pretendo me tornar um Flutter Developer Expert.
+<!-- # Introduction
 
 ---
 
@@ -8,12 +17,4 @@ I'm Rodrigo Castro, 23, Totally passionate about mobile development. Graduated i
 when I came into contact with PHP and since then I have always been studying and improving my programming practices.
 Currently studying and applying knowledge about Flutter I fell in love with the language, I intend to become a Flutter Developer Expert. 
   
-<!-- ## Informal
-
-I come from a small town “Fatehnagar” located in Udaipur, Rajasthan.  
-I am the youngest in my family of 6 members including my parents and 3 elder sisters.  
-My little secret: If not software developer, I would be working as a videographer or a chef.  
-Please read interests section to know more about my emotional and personal side.  --> 
-  
-  
-<!-- -- Last updated on: Nov. 20, 2022 -->
+ -->

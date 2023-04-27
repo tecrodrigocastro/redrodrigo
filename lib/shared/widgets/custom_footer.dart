@@ -19,7 +19,7 @@ class CustomFooter extends StatelessWidget {
       child: Row(
         children: [
           Text(
-            'me encontre em:',
+            'minhas redes:',
             style: Theme.of(context).textTheme.bodyMedium,
           ),
           const VerticalDivider(),

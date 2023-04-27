@@ -1,10 +1,10 @@
-# Career Progression
+# Progressão de carreira
 
 ---
 
-#### Full Stack Developer @ ORBE TELECOM - TELECOMUNICAÇÕES  | Jan 2022 - Present 
+#### Full Stack Developer @ ORBE TELECOM - TELECOMUNICAÇÕES  | Jan 2022 - Presente 
 
-###### Responsibilities
+###### Responsabilidades
 
 - Desenvolvimento e manutenção de Web Apps.
 - Desenvolvimento e manutenção de Aplicativos Mobile.
@@ -13,7 +13,7 @@
 - Configuração de serviços em docker.  
 - Experiência com equipamentos e sistemas para telecomunicação
 
-###### Key Projects/Features
+###### Principais projetos/recursos
 
 - Desenvolvimento completo do app para fechamento de ordem de serviços dos tecnicos | **Flutter,PHP,Postman,Consumo de Api externa**
 - Desenvolvimento Full Stack do sistema de controle do RH, onde temos o dashboard web e o aplicativo mobile para o funcionario,
@@ -23,9 +23,9 @@
 
 ---  
 
-#### System Programmer @ DRE SERVICOS CONTABEIS EIRELI  | Abr 2021 - Dez 2021
+#### Programador de sistemas  @ DRE SERVICOS CONTABEIS EIRELI  | Abr 2021 - Dez 2021
 
-###### Responsibilities
+###### Responsabilidades
 
 - Processamento de dados, manutenção na rede interna, geração de relatórios e documentação do banco de dados.
 
@@ -36,9 +36,9 @@
  -->
 ---
   
-#### Administrative Supervisor @ Prefeitura Municipal de São Gonçalo do Amarante | Jul 2019 - Dez 2020
+#### Supervisor Administrativo @ Prefeitura Municipal de São Gonçalo do Amarante | Jul 2019 - Dez 2020
 
-###### Responsibilities
+###### Responsabilidades
 
 - Gerenciamento da equipe de monitores (15 integrantes) e gerenciamento dos núcleos de tecnologia do município (NUTEDS).
   Realizávamos cursos gratuitos para a população, cursos de informática básica, Excel básico e intermediário, Photoshop e edição de vídeos.

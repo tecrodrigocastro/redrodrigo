@@ -30,7 +30,7 @@ final ItemTree aboutMeItemStructure = ItemTree(
       name: "profissional",
       children: [
         Item(type: ItemType.file, name: "pregressao_carreira.md"),
-        Item(type: ItemType.file, name: "habilidades.md"),
+        Item(type: ItemType.file, name: "skills.md"),
         Item(type: ItemType.file, name: "conquistas.md"),
       ],
     )
