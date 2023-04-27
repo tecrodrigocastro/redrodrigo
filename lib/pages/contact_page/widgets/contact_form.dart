@@ -252,8 +252,9 @@ class _ContatcFormState extends State<ContatcForm> {
           Expanded(
             flex: 1,
             child: Padding(
-                padding: const EdgeInsets.all(20).copyWith(top: 50),
-                child: const ContactFormSnippet()),
+              padding: const EdgeInsets.all(20).copyWith(top: 50),
+              child: const ContactFormSnippet(),
+            ),
           ),
         ]
       ],

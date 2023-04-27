@@ -15,7 +15,7 @@ class ProjectsMainContent extends StatelessWidget {
     return Column(
       children: [
         Container(
-          height: 35,
+          height: 45,
           width: double.infinity,
           decoration: const BoxDecoration(
               color: primaryColor,

@@ -5,7 +5,7 @@ List<ProjectEntity> listOfProjects = [
   ProjectEntity(
     title: 'Portfolio Website',
     projectDescription:
-        'A personal portfolio portal for myself. I built it using Flutter and enjoyed working on various new things while working on it',
+        'Meu portfólio pessoal. Eu o construí usando  Flutter e gostei de trabalhar em várias coisas novas enquanto trabalhava nele',
     id: 'rodrigo-portfolio',
     techStackUsed: [
       TechStack.flutter,
@@ -19,99 +19,50 @@ List<ProjectEntity> listOfProjects = [
       'Snack Game',
     ],
     thumbnail: 'assets/images/project.png',
+    liveProjectLink: 'https://tecrodrigocastro.github.io/#/',
   ),
   ProjectEntity(
-    title: 'E-commerce',
-    projectDescription:
-        'A personal portfolio portal for myself. I built it using Flutter and enjoyed working on various new things while working on it',
-    id: 'rodrigo-portfolio',
-    techStackUsed: [
-      TechStack.php,
-      TechStack.flutter,
-      TechStack.laravel,
-    ],
-    githubLink: 'https://github.com/tecrodrigocastro/redrodrigo',
-    highlights: [
-      'VSCode like theme',
-      'BLoc/Cubit state management',
-      'Used freezed + build_runner',
-      'Snack Game',
-    ],
-    thumbnail: 'assets/images/project.png',
-  ),
-  ProjectEntity(
-    title: 'CRUD',
-    projectDescription:
-        'A personal portfolio portal for myself. I built it using Flutter and enjoyed working on various new things while working on it',
-    id: 'rodrigo-portfolio',
-    techStackUsed: [
-      TechStack.php,
-      TechStack.bootstrap,
-      TechStack.mysql,
-    ],
-    githubLink: 'https://github.com/tecrodrigocastro/redrodrigo',
-    highlights: [
-      'VSCode like theme',
-      'BLoc/Cubit state management',
-      'Used freezed + build_runner',
-      'Snack Game',
-    ],
-    thumbnail: 'assets/images/project.png',
-  ),
-  ProjectEntity(
-    title: 'Portfolio Website',
-    projectDescription:
-        'A personal portfolio portal for myself. I built it using Flutter and enjoyed working on various new things while working on it',
-    id: 'rodrigo-portfolio',
+    title: 'Website Orbe Telecom ',
+    projectDescription: 'Reformulei o site da empresa usando Flutter para web',
+    id: 'orbe-website',
     techStackUsed: [
       TechStack.flutter,
       TechStack.dart,
     ],
-    githubLink: 'https://github.com/tecrodrigocastro/redrodrigo',
+    //githubLink: 'https://github.com/tecrodrigocastro/redrodrigo',
     highlights: [
-      'VSCode like theme',
-      'BLoc/Cubit state management',
+      'MapBox',
+      'SliverList',
       'Used freezed + build_runner',
-      'Snack Game',
     ],
-    thumbnail: 'assets/images/project.png',
+    thumbnail: 'assets/images/orbe.png',
+    liveProjectLink: 'https://orbetelecom.com.br/#/',
   ),
   ProjectEntity(
-    title: 'E-commerce',
-    projectDescription:
-        'A personal portfolio portal for myself. I built it using Flutter and enjoyed working on various new things while working on it',
+    title: 'EM BREVE',
+    projectDescription: 'Irei atualizar com todos os meus projetos',
     id: 'rodrigo-portfolio',
     techStackUsed: [
       TechStack.php,
-      TechStack.flutter,
-      TechStack.laravel,
+      TechStack.bootstrap,
+      TechStack.mysql,
+      TechStack.laravel
     ],
-    githubLink: 'https://github.com/tecrodrigocastro/redrodrigo',
-    highlights: [
-      'VSCode like theme',
-      'BLoc/Cubit state management',
-      'Used freezed + build_runner',
-      'Snack Game',
-    ],
-    thumbnail: 'assets/images/project.png',
+    githubLink: 'https://github.com/tecrodrigocastro/',
+    highlights: [],
+    thumbnail: 'assets/images/breve.jpg',
   ),
   ProjectEntity(
-    title: 'CRUD',
-    projectDescription:
-        'A personal portfolio portal for myself. I built it using Flutter and enjoyed working on various new things while working on it',
+    title: 'EM BREVE',
+    projectDescription: 'Irei atualizar com todos os meus projetos',
     id: 'rodrigo-portfolio',
     techStackUsed: [
       TechStack.php,
       TechStack.bootstrap,
       TechStack.mysql,
     ],
-    githubLink: 'https://github.com/tecrodrigocastro/redrodrigo',
-    highlights: [
-      'VSCode like theme',
-      'BLoc/Cubit state management',
-      'Used freezed + build_runner',
-      'Snack Game',
-    ],
-    thumbnail: 'assets/images/project.png',
+    githubLink: 'https://github.com/tecrodrigocastro/',
+    highlights: [],
+    thumbnail: 'assets/images/breve.jpg',
   ),
 ];

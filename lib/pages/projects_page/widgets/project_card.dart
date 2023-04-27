@@ -59,7 +59,7 @@ class _ProjectCardState extends State<ProjectCard> {
                     image: AssetImage(
                       widget.project.thumbnail!,
                     ),
-                    fit: BoxFit.contain,
+                    fit: BoxFit.cover,
                   ),
                 ),
               ),
@@ -139,7 +139,7 @@ class _ProjectCardState extends State<ProjectCard> {
                                 widget.project.liveProjectLink!);
                           },
                           child: const Text(
-                            'live-project',
+                            'link-projeto',
                             style: TextStyle(
                               color: secondaryWhiteColor,
                             ),
@@ -167,7 +167,7 @@ class _ProjectCardState extends State<ProjectCard> {
                           child: Row(
                             children: [
                               const Text(
-                                'view-code',
+                                'ver-codigo',
                                 style: TextStyle(
                                   color: secondaryWhiteColor,
                                 ),

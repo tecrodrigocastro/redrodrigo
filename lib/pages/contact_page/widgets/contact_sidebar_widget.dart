@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:redrodrigo/pages/contact_page/widgets/item_sidebar.dart';
 import 'package:redrodrigo/shared/constants/colors_schema.dart';
+import 'package:redrodrigo/shared/constants/constants.dart';
 
 class ContactSideBar extends StatefulWidget {
   const ContactSideBar({super.key});
@@ -17,9 +18,16 @@ class _ContactSideBarState extends State<ContactSideBar> {
     return Column(
       children: [
         const ItemSideBar(
-            icon: Icons.email, title: 'tec.rodrigocastro@gmail.com'),
+          icon: Icons.email,
+          title: 'tec.rodrigocastro@gmail.com',
+          url: emailLink,
+        ),
         //const SizedBox(height: 5),
-        const ItemSideBar(icon: Icons.phone, title: '+55 85 99154-6543'),
+        const ItemSideBar(
+          icon: Icons.phone,
+          title: '+55 85 99154-6543',
+          url: telLink,
+        ),
         const SizedBox(height: 15),
 
         Container(
@@ -46,9 +54,12 @@ class _ContactSideBarState extends State<ContactSideBar> {
             ),
           ),
         ),
-        const ItemSideBar(icon: Icons.link, title: 'Canal do Youtube'),
-        const ItemSideBar(icon: Icons.link, title: 'Perfil do linkedIn'),
-        const ItemSideBar(icon: Icons.link, title: 'Perfil do Github'),
+        const ItemSideBar(
+            icon: Icons.link, title: 'Canal do Youtube', url: youtubeLink),
+        const ItemSideBar(
+            icon: Icons.link, title: 'Perfil do linkedIn', url: linkedinLink),
+        const ItemSideBar(
+            icon: Icons.link, title: 'Perfil do Github', url: githubLink),
       ],
     );
   }

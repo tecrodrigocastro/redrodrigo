@@ -57,7 +57,8 @@ class ContactFormSnippet extends StatelessWidget {
                 text: '"https://redrodrigo.com/messages"',
                 textType: TextType.string,
               ),
-              getCustomTextSpan(text: ')', textType: TextType.symbol),
+              getCustomTextSpan(
+                  text: ') data: message', textType: TextType.symbol),
               getCustomTextSpan(text: ')', textType: TextType.symbol),
               getCustomTextSpan(text: ';\n', textType: TextType.symbol),
               getCustomTextSpan(text: '3', textType: TextType.lineNo),
@@ -74,7 +75,7 @@ class ContactFormSnippet extends StatelessWidget {
                   text: '        print', textType: TextType.keyword),
               getCustomTextSpan(text: '(', textType: TextType.symbol),
               getCustomTextSpan(
-                  text: '"Excited to connect with you, Will reply back soon!"',
+                  text: '"Obrigado pela mensagem, responderei em breve!"',
                   textType: TextType.string),
               getCustomTextSpan(text: ')', textType: TextType.symbol),
               getCustomTextSpan(text: ';\n', textType: TextType.symbol),
@@ -87,8 +88,7 @@ class ContactFormSnippet extends StatelessWidget {
                   text: '        print', textType: TextType.keyword),
               getCustomTextSpan(text: '(', textType: TextType.symbol),
               getCustomTextSpan(
-                  text:
-                      '"Oo oh, This does not seem to work, ping me on my socials !"',
+                  text: '"Algum problema aconteceu, corrigirei em breve!"',
                   textType: TextType.string),
               getCustomTextSpan(text: ')', textType: TextType.symbol),
               getCustomTextSpan(text: ';\n', textType: TextType.symbol),

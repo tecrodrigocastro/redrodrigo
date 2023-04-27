@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:redrodrigo/shared/constants/colors_schema.dart';
+import 'package:redrodrigo/shared/constants/constants.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class CustomFooterMobile extends StatelessWidget {
   const CustomFooterMobile({super.key});
@@ -26,7 +28,9 @@ class CustomFooterMobile extends StatelessWidget {
           Tooltip(
             message: 'Twitter',
             child: IconButton(
-              onPressed: () {},
+              onPressed: () async {
+                await launchUrlString(twitterLink);
+              },
               icon: Image.asset(
                 'assets/icons/twitter.png',
                 color: secondaryWhiteColor,
@@ -39,7 +43,9 @@ class CustomFooterMobile extends StatelessWidget {
           Tooltip(
             message: 'Linkedin',
             child: IconButton(
-              onPressed: () {},
+              onPressed: () async {
+                await launchUrlString(linkedinLink);
+              },
               icon: Image.asset(
                 'assets/icons/linkedin.png',
                 color: secondaryWhiteColor,
@@ -53,7 +59,9 @@ class CustomFooterMobile extends StatelessWidget {
           Tooltip(
             message: 'Github',
             child: IconButton(
-              onPressed: () {},
+              onPressed: () async {
+                await launchUrlString(githubLink);
+              },
               icon: Image.asset(
                 'assets/icons/github.png',
                 color: secondaryWhiteColor,
