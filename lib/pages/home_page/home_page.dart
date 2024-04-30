@@ -16,6 +16,7 @@ class HomePage extends StatelessWidget {
       width: double.infinity,
       height: double.infinity,
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           const InfoHome(),
           Visibility(
@@ -62,22 +63,22 @@ class HomePage extends StatelessWidget {
                                 height: 120,
                                 width: 200,
                                 color: secondaryGreenColor.withOpacity(0.5),
-                                child: Column(
+                                child: const Column(
                                   children: [
-                                    const Text('// use o teclado'),
-                                    const Text('// setas para jogar'),
-                                    const SizedBox(height: 8),
-                                    const KeyKeyboard(
+                                    Text('// use o teclado'),
+                                    Text('// setas para jogar'),
+                                    SizedBox(height: 8),
+                                    KeyKeyboard(
                                       icon: 'assets/icons/arrow_drop_up.png',
                                     ),
-                                    const SizedBox(height: 8),
+                                    SizedBox(height: 8),
                                     Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          horizontal: 20),
+                                      padding:
+                                          EdgeInsets.symmetric(horizontal: 20),
                                       child: Row(
                                         mainAxisAlignment:
                                             MainAxisAlignment.spaceEvenly,
-                                        children: const [
+                                        children: [
                                           KeyKeyboard(
                                             icon:
                                                 'assets/icons/arrow_drop_left.png',

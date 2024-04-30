@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:redrodrigo/shared/constants/colors_schema.dart';
+import 'package:redrodrigo/shared/constants/constants.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class InfoHome extends StatelessWidget {
   const InfoHome({super.key});
@@ -28,22 +30,34 @@ class InfoHome extends StatelessWidget {
                 width: 8,
               ),
               Text(
-                'Olá a todos, eu sou;',
+                'Olá a todos, eu sou o:',
                 style: Theme.of(context).textTheme.labelLarge!.copyWith(
                       color: primaryColorLight,
                     ),
               ),
             ],
           ),
-          Text(
+          /*   Text(
             'Rodrigo Castro',
             style: Theme.of(context).textTheme.displayLarge,
+          ), */
+          RichText(
+            text: TextSpan(
+              text: 'RED RODRIGO\n',
+              style: Theme.of(context).textTheme.displayLarge,
+              children: [
+                TextSpan(
+                  text: '(Rodrigo Castro)',
+                  style: Theme.of(context).textTheme.labelLarge,
+                ),
+              ],
+            ),
           ),
           const SizedBox(
             height: 4,
           ),
           Text(
-            '> FullStack developer\n  Laravel and Flutter',
+            '> Software Developer\n  Laravel and Flutter',
             style: Theme.of(context)
                 .textTheme
                 .displayMedium!
@@ -53,40 +67,42 @@ class InfoHome extends StatelessWidget {
             height: 12,
           ),
           Text(
-            '// site desenvolvido em flutter!',
+            '// site desenvolvido em flutter!:)',
             style: Theme.of(context)
                 .textTheme
                 .labelLarge!
                 .copyWith(color: secondaryGreyColor),
           ),
           Text(
-            '// veja minha página github',
+            '// visite meu github',
             style: Theme.of(context)
                 .textTheme
                 .labelLarge!
                 .copyWith(color: secondaryGreyColor),
           ),
           RichText(
-            text: const TextSpan(
+            text: TextSpan(
               text: 'const  ',
-              style: TextStyle(color: secondaryBlueColor),
+              style: const TextStyle(color: secondaryBlueColor),
               children: [
-                TextSpan(
+                const TextSpan(
                   text: 'githubLink  ',
                   style: TextStyle(color: accentGreenColor),
                 ),
-                TextSpan(
+                const TextSpan(
                   text: '=  ',
                   style: TextStyle(color: secondaryWhiteColor),
                 ),
                 TextSpan(
                   text: '"https://github.com/tecrodrigocastro"',
-                  style: TextStyle(
+                  onEnter: (event) => launchUrlString(githubLink),
+                  mouseCursor: MaterialStateMouseCursor.clickable,
+                  style: const TextStyle(
                     color: accentOrangeColor,
                     overflow: TextOverflow.ellipsis,
                   ),
                 ),
-                TextSpan(
+                const TextSpan(
                   text: ';',
                   style: TextStyle(color: secondaryWhiteColor),
                 ),

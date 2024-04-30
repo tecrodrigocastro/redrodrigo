@@ -52,8 +52,8 @@ class _TabBarHeaderState extends State<TabBarHeader> {
             style: TextButton.styleFrom(
               foregroundColor: secondaryGreyColor,
             ),
-            child: Row(
-              children: const [
+            child: const Row(
+              children: [
                 VerticalDivider(),
                 SizedBox(
                   width: 4,
