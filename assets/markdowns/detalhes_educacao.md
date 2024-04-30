@@ -17,6 +17,15 @@
 
 2017-2020 | UniAteneu
 
+
+---
+
+### Pós Graduação
+
+#### Engenharia de software com métodos ágeis
+
+2023-presente | Cruzeiro do sul
+
 <!-- # Education Details
 
 ---

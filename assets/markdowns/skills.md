@@ -4,13 +4,14 @@
 
 - Php
 - Dart
-- Html
 - SQL
 ### Frameworks
 
 - Flutter
 - Laravel
-- Bootstrap
+- Livewire
+- FilamentPHP
+- Tailwind
 - MySQL
 - Firebase
 

@@ -53,7 +53,10 @@ class HomePage extends StatelessWidget {
                           height: 420,
                           width: 250,
                           color: primaryColor,
-                          child: const SnackGame(),
+                          child: const Padding(
+                            padding: EdgeInsets.all(8.0),
+                            child: SnackGame(),
+                          ),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(10),
